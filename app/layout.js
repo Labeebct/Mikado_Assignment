@@ -1,7 +1,26 @@
-import { Inter } from "next/font/google";
+import { Inter, Merriweather, Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['300', '400', '700', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-merriweather',
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-roboto',
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +30,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${merriweather.variable} ${playfairDisplay.variable} ${roboto.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
