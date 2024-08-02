@@ -11,7 +11,7 @@ module.exports = {
         'box': '0px 0px 8px rgba(0, 0, 0, 0.2)',
       },
       cursor: {
-        large: 'url(/path-to-your-cursor.png), auto',
+        large: 'url(https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/v6bwf3e8qhdfhrgq7lv3/IMGWorldsofAdventureTicketinDubai.jpg), auto',
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
