@@ -16,7 +16,8 @@
     "react": "^18",
     "react-curtains": "^1.0.10",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.13.0"
+    "react-intersection-observer": "^9.13.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "eslint": "^8",

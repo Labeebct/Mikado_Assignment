@@ -122,14 +122,14 @@ const ScrollingGrid = () => {
   //Setting how much movement should be occur
   const leftColumnY = useTransform(scrollY, [0, 2000], [0, -200]);
   const centerColumnY = useTransform(scrollY, [0, 2000], [0, -600]);
-  const rightColumnY = useTransform(scrollY, [0, 2000], [0, -1000]);
+  const rightColumnY = useTransform(scrollY, [0, 2000], [0, -800]);
 
   const leftColumn = frameContents.filter((_, index) => index % 3 === 0);
   const centerColumn = frameContents.filter((_, index) => index % 3 === 1);
   const rightColumn = frameContents.filter((_, index) => index % 3 === 2);
 
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 h-auto p-8 gap-x-4 gap-y-4">
+    <div className="w-full my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 h-auto p-8 gap-x-4 gap-y-4">
       {/* Left Column */}
       <motion.div className="space-y-10" style={{ y: leftColumnY }}>
         {leftColumn.map((data, index) => (
